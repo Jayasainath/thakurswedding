@@ -336,6 +336,8 @@
 
 				image.alt = imageData.title;
 				image.src = imageData.slideUrl;
+				image.style.height = '403px';
+    			image.style.width = '620px';
 
 				return this;
 			},
@@ -609,6 +611,9 @@
 					// set alt and src
 					image.alt = imageData.title;
 					image.src = imageData.slideUrl;
+					image.style.height = '403px';
+    				image.style.width = '620px';
+
 				}
 
 				// This causes the preloader (if still running) to relocate out from the currentIndex

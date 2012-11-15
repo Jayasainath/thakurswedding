@@ -8,10 +8,7 @@
     <%= stylesheet_link_tag "style" %>
     <%= stylesheet_link_tag "grid" %>
 
-    <%= javascript_include_tag "jquery-1.6.2.min" %>
-    <%= javascript_include_tag "jquery.galleriffic" %>
-    <%= javascript_include_tag "jquery.opacityrollover" %>   
-    <%= javascript_include_tag "scripts" %>
+    
 	<!--[if lt IE 7]>
         <div style=' clear: both; text-align:center; position: relative;'>
             <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"  alt="" /></a>
@@ -39,7 +36,7 @@
                                     </div>
                                     <div class='menuListItemsClass'>
                                         <li>
-                                            <%= link_to "Home", :controller => 'home', :action => 'index' %>    
+                                            <%= link_to "Gallery", :controller => 'home', :action => 'index' %>    
                                         </li>
                                         
                                     </div>
@@ -105,28 +102,22 @@
                                     <div id="thumbs" class="navigation">
                                         <ul class="thumbs noscript">
                                             <li>
-                                                <!-- <a class="thumb" href="gallery-img1.jpg" title=""> -->
-                                                <%= image_tag "thumb-1.jpg", :size => "140x121", :class => "thumb" %><span></span> </a>
+                                               <a class="thumb" href="/assets/gallery-img1.jpg" title=""> <img src="/assets/thumb-1.jpg" alt="" width="140" height="121"/><span></span> </a>
                                             </li> 
                                             <li>
-                                               <!--  <a class="thumb" href="gallery-img2.jpg" title=""> -->
-                                                <%= image_tag "thumb-2.jpg", :size => "140x121" %>
+                                               <a class="thumb" href="/assets/gallery-img2.jpg" title=""> <img src="/assets/thumb-2.jpg" alt="" width="140" height="121"/><span></span> </a>
                                             </li> 
                                             <li>
-                                                <!-- <a class="thumb" href="gallery-img3.jpg" title=""> -->
-                                                <%= image_tag "thumb-3.jpg", :size => "140x121" %>
+                                                <a class="thumb" href="/assets/gallery-img3.jpg" title=""> <img src="/assets/thumb-7.jpg" alt="thumb-3" width="140" height="121"/><span></span> </a>
                                             </li> 
                                             <li>
-                                                <!-- <a class="thumb" href="gallery-img4.jpg" title=""> -->
-                                                <%= image_tag "thumb-4.jpg", :size => "140x121" %>
+                                                <a class="thumb" href="/assets/gallery-img4.jpg" title=""> <img src="/assets/thumb-8.jpg" alt="" width="140" height="121"/><span></span> </a>
                                             </li> 
                                             <li>
-                                                <!-- <a class="thumb" href="gallery-img5.jpg" title=""> -->
-                                                <%= image_tag "thumb-5.jpg", :size => "140x121" %>
+                                                <a class="thumb" href="/assets/gallery-img5.jpg" title=""> <img src="/assets/thumb-9.jpg" alt="" width="140" height="121"/><span></span></a>
                                             </li> 
                                             <li>
-                                                <!-- <a class="thumb" href="gallery-img6.jpg" title=""> -->
-                                                <%= image_tag "thumb-6.jpg", :size => "140x121" %>
+                                                <a class="thumb" href="/assets/gallery-img6.jpg" title=""> <img src="/assets/thumb-10.jpg" alt="" width="140" height="121"/><span></span></a>
                                             </li>           
                                         </ul>
                                     </div>
@@ -135,7 +126,7 @@
                                     <div class="wrapper">
                                         <span class="title img-indent3">Thakur's Wedding</span>
                                         <div class="extra-wrap indent-top2">
-                                        	<strong>Hi Friends.</strong><!--  is one of <a target="_blank" href="http://blog.templatemonster.com/free-website-templates/ ">free website templates</a> created by TemplateMonster.com team. This website template is opti mized for 1024X768 screen resolution. It is also XHTML &amp; CSS valid. It has several pages: <a class="color-3" href="index.html">About</a>, <a class="color-3" href="services.html">Services</a>, <a class="color-3" href="catalogue.html">Catalogue</a>, <a class="color-3" href="pricing.html">Pricing</a>, <a class="color-3" href="contacts.html">Contact Us</a> (note that contact us form – doesn’t work). -->
+                                        	<strong>Hi Friends.</strong>
                                             Welcome to our website! This website chronicles all those special moments that are yet to unfold, for  Nupur and Me, on the way to the altar as we are preparing to say 'I do ' .   
                                         </div>
                                     </div>
@@ -234,5 +225,10 @@
             </div>
         </div>
     </footer>
+    
+    <%= javascript_include_tag "jquery-1.6.2.min" %>
+    <%= javascript_include_tag "jquery.galleriffic" %>
+    <%= javascript_include_tag "jquery.opacityrollover" %>   
+    <%= javascript_include_tag "scripts" %>
 </body>
 </html>
