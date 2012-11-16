@@ -59,7 +59,7 @@ module Sites
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    # use custom fonts placed in this location
+    # Use custom fonts placed in this location
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
 
   end

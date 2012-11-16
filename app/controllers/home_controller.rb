@@ -6,6 +6,10 @@ class HomeController < ApplicationController
 	end
 
 	def contact_us
+
+	end
+
+	def gallery
 		
 	end
 
