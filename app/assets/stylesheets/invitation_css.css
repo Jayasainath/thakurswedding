@@ -1,0 +1,24 @@
+body{
+	/*margin: 20px;*/
+}#leftDiv{
+	margin-left: 20px;
+	/*margin-top: 100px;*/
+}#rightDiv{
+	margin-left: 55%;
+	top: 100px;
+}.sub_headers{
+	color: #04AAEB;
+}.groom{
+	color: #04AAEB;
+	font-weight: bold;
+}.bride{
+	color: #04AAEB;
+	font-weight: bold;
+}.andClass{
+	color: #04AAEB;
+}
+
+@font-face{
+	src:url('Capture_it');
+	font-family: 'Captureitregular'
+}

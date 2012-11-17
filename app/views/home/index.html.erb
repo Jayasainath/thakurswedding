@@ -60,6 +60,11 @@
                                             <%= link_to "Contact Us", :controller => 'home', :action => 'contact_us' %>    
                                         </li>
                                     </div>
+                                    <div class='menuListItemsClass'>
+                                        <li>
+                                            <%= link_to "Invitation", :controller => 'home', :action => 'invitation_view' %>    
+                                        </li>
+                                    </div>
                                 </div>
                             </ul>
                         </nav>
@@ -184,19 +189,60 @@
         	<div class="main">
             	<div class="container_12">
                 	<div class="wrapper">
-                    	<article class="grid_4">
+                    	<!-- <article class="grid_4">
                         	<h3 class="prev-indent-bot">About Us</h3>
                             <p class="prev-indent-bot">This <a target="_blank" href="http://blog.templatemonster.com/2011/08/22/free-website-template-clean-style-interior/ ">Interior Design Template</a> goes with two pack ages: with PSD source files and without them.</p>
                             PSD source files are available for free for the registered members of Templates.com. The basic package (without PSD source) is available for anyone without registration.
+                        </article> -->
+                        <div id="countdown-container" class="grid_4"></div>
+                        <article class="countdownTimerClass">
+                            <h3 class="prev-indent-bot">Countdown</h3>
+                            <p>
+                                <!-- Start of CountDown Timer -->
+                                <div id="countdown_dashboard">
+                                    <div class="dash weeks_dash">
+                                        <span class="dash_title">weeks</span>
+                                        <div class="digit">0</div>
+                                        <div class="digit">0</div>
+                                    </div>
+
+                                    <div class="dash days_dash">
+                                        <span class="dash_title">days</span>
+                                        <div class="digit">0</div>
+                                        <div class="digit">0</div>
+                                    </div>
+
+                                    <div class="dash hours_dash">
+                                        <span class="dash_title">hours</span>
+                                        <div class="digit">0</div>
+                                        <div class="digit">0</div>
+                                    </div>
+
+                                    <div class="dash minutes_dash">
+                                        <span class="dash_title">minutes</span>
+                                        <div class="digit">0</div>
+                                        <div class="digit">0</div>
+                                    </div>
+
+                                    <div class="dash seconds_dash">
+                                        <span class="dash_title">seconds</span>
+                                        <div class="digit">0</div>
+                                        <div class="digit">0</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- End of CountDown Timer -->
+                                
+                            </p>
                         </article>
-                        <article class="grid_4">
+                        <!-- <article class="grid_4">
                         	<h3 class="prev-indent-bot">Testimonials</h3>
                             <div class="quote">
                             	<p class="prev-indent-bot">At vero eos et accusamus et iusto odio tium voluptatum deleniti atque corrupti quos<br> dolores et quas molestias excepturi sint occaecati cupiditate.</p>
                                 <h5>James Reese</h5>
                                 Managing Director
                             </div>
-                        </article>
+                        </article> -->
                         <article class="grid_4">
                         	<h3 class="prev-indent-bot">What’s New?</h3>
                             <time class="tdate-1" datetime="2011-08-15"><a class="link" href="#">15.08.2011</a></time>
@@ -240,7 +286,47 @@
     
     <%= javascript_include_tag "jquery-1.6.2.min" %>
     <%= javascript_include_tag "jquery.galleriffic" %>
+    <%= javascript_include_tag "misc" %>
+    <%= javascript_include_tag "jquery-countdown" %>
+    <%= javascript_include_tag "jquery-Countdown-1.0" %>
     <%= javascript_include_tag "jquery.opacityrollover" %>   
     <%= javascript_include_tag "scripts" %>
+    
+    <!-- Start of Script for Count Down Timer -->
+    <script language="javascript" type="text/javascript">
+            jQuery(document).ready(function() {
+                $('#countdown_dashboard').countDown({
+                    targetDate: {
+                        'day':      07,
+                        'month':    12,
+                        'year':     2012,
+                        'hour':     20,
+                        'min':      27,
+                        'sec':      0
+                    }
+                });
+            });
+            
+            $('#countdown-container').countdown({
+                stepTime: 60,
+                format: 'hh:mm:ss',
+                startTime: "12:32:55",
+                digitImages: 6,
+                digitWidth: 53,
+                digitHeight: 77,
+                timerEnd: function() { alert('end!!'); },
+                image: "digits.png"
+            });
+                  
+            $(function() {
+                $('#countdown-container').countdown({
+                    date: "June 7, 2087 15:03:26"
+                });
+            });
+            
+        </script>
+        
+    <!-- End of Script for Count Down Timer -->
+    
 </body>
 </html>

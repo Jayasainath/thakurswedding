@@ -1,0 +1,149 @@
+<html>
+	<head>
+		<title>Invitation</title>
+		<%= stylesheet_link_tag "invitation_css" %>
+
+		<%= stylesheet_link_tag "style" %>		
+	</head>
+	<body>
+		<!--==============================header=================================-->
+    <header>
+    	<div class="row-1">
+        	<div class="main">
+            	<div class="container_12">
+                	<div class="grid_12">
+                    	<nav>
+                            <ul class="menu">
+                                <div class='menuListItemsDiv'>
+                                    <div class='menuListItemsClass'>
+                                        <li>
+                                            <%= link_to "Home", :controller => 'home', :action => 'index' %>    
+                                        </li>
+                                    </div>
+                                    <div class='menuListItemsClass'>
+                                        <li>
+                                            <%= link_to "Gallery", :controller => 'home', :action => 'gallery' %>    
+                                        </li>
+                                        
+                                    </div>
+                                    <div class='menuListItemsClass'>
+                                        <li>
+                                            <%= link_to "Story", :controller => 'home', :action => 'index' %>    
+                                        </li>
+                                    </div>
+                                    <div class='menuListItemsClass'>
+                                        <li>
+                                            <%= link_to "Contact Us", :controller => 'home', :action => 'contact_us' %>    
+                                        </li>
+                                    </div>
+                                    <div class='menuListItemsClass'>
+                                        <li>
+                                            <%= link_to "Invitation", :controller => 'home', :action => 'invitation_view' %>    
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="row-2">
+        	<div class="main">
+            	<div class="container_12">
+                	<div class="grid_9">
+                    	<h1>
+                            <a class="logo" href="index.html">Th<strong>a</strong>kur's</a>
+                            <span>Wedding</span>
+                        </h1>
+                    </div>
+                    <div class="grid_3">
+                    	<form id="search-form" method="post" enctype="multipart/form-data">
+                            <fieldset>	
+                                <div class="search-field">
+                                    <input name="search" type="text" />
+                                    <a class="search-button" href="#" onClick="document.getElementById('search-form').submit()"><span>search</span></a>	
+                                </div>						
+                            </fieldset>
+                        </form>
+                     </div>
+                     <div class="clear"></div>
+                </div>
+            </div>
+        </div>    	
+    </header>
+    
+		<vr></vr>
+		<div id="leftDiv">
+			<h3>Wedding Invitation</h3>
+			
+		</div>
+		
+		<%= image_tag "" %>
+		
+		<div id="rightDiv">
+			<p>Together with their parents</p>
+			<p class='groom'>Chi. Thakur Amar Singh Chouhan</p>
+			<p class='andClass'>&</p>
+			<p class='bride'>Chi. Sow. Thakur Nupur</p>
+			
+			<p>Request the honour of your presence at their marraige</p><br>
+			
+			<p class="sub_headers">Rathjaga:</p>
+			<p>On Tuesday</p>
+			<p></p>
+			
+			<p class="sub_headers">Mandva Tel Mayan:</p>
+			<p>On Wednesday 5th December 2012</p>
+			
+			<p class="sub_headers">Barath:</p>
+			<p>On Friday 7th December 2012, 6:00 P.M. onwards</p>
+			<p>Solapur</p>
+			
+			<p class="sub_headers">Sumuhurtham:</p>
+			<p>On Friday 7th December 2012, at 8:27 P.M.</p>
+			
+			<p class="sub_headers">Venue:</p>
+			<p>Katkar Mangal Function Hall,</p>
+			<p>Near Khamidkar Apartments, Murajipet, Solapur, Maharashtra</p>
+			
+			<p class="sub_headers">Reception:</p>
+			<p>On Sunday 9th December 2012, 6:00 P.M. onwards</p>
+			<p>Chichond, Bhainsa Dist, Adilabad - 504103</p>
+			
+			<p></p>
+		</div>
+		
+		<!--==============================footer=================================-->
+	    <footer>
+	        <div class="main">
+	        	<div class="container_12">
+	            	<div class="wrapper">
+	                	<div class="grid_4">
+	                    	<div>Interior Design &copy; 2011 <a class="link color-3" href="#">Privacy Policy</a></div>
+	                        <div><a rel="nofollow" target="_blank" href="http://www.templatemonster.com/">Website Template</a> by TemplateMonster.com | <a rel="nofollow" target="_blank" href="http://www.html5xcss3.com/">html5xcss3.com</a></div>
+	                        <!-- {%FOOTER_LINK} -->
+	                    </div>
+	                    <div class="grid_4">
+	                    	<span class="phone-numb"><span>+91</span> 99493 90335</span>
+	                    </div>
+	                    <div class="grid_4">
+	                    	<ul class="list-services">
+	                        	<li>
+	                                <div class="fb-like" data-href="http://arcane-thicket-8918.herokuapp.com/" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="trebuchet ms"></div>
+	                            </li>
+	                            <!-- <li><a class="item-2" href="#"></a></li>
+	                            <li><a class="item-3" href="#"></a></li>
+	                            <li><a class="item-4" href="#"></a></li> -->
+	                        </ul>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </footer>
+		
+	    <%= javascript_include_tag "scripts" %>
+		
+	</body>
+</html>

@@ -13,5 +13,9 @@ class HomeController < ApplicationController
 		
 	end
 
+	def invitation_view
+		render "invitation"
+	end
+
 
 end
