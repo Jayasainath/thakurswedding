@@ -253,7 +253,7 @@ footer {width:100%;padding:40px 0 33px;background:url(footer-tail.gif) center to
 	padding:0;
 }
 /*body{
-	background: #564c4c url(../webtreats2.jpg) repeat top left;
+	background: #564c4c url(webtreats2.jpg) repeat top left;
 	font-family:"Trebuchet MS","Myriad Pro", Helvetica, sans-serif;
 	font-size:12px;
 	color: #111;
@@ -277,7 +277,7 @@ footer {width:100%;padding:40px 0 33px;background:url(footer-tail.gif) center to
 	margin:0;
 	width:175px;
 	padding:0 10px;
-	background:transparent url(bg.png) repeat top left;
+	background:transparent url(../bg.png) repeat top left;
 	border-right:1px solid #f0f0f0;
 	-moz-box-shadow:-2px 0px 10px #000 inset;
 	-webkit-box-shadow:-2px 0px 10px #000 inset;
@@ -493,6 +493,41 @@ img#pg_large{
 	top: 60px;
 }
 
-.countdownTimerClass{
-	
+.countDownTimerClass{
+	float: left;
+	margin-left: 0px;
+	margin-top: 80px;
+	position: absolute;
+	font-size: 32px;
+	font-family: 'segoeui'
+}.daysCount{
+	margin-left: 29px;
+	position: absolute;
+	margin-top: 10px;
+}.hoursCount{
+	margin-left: 124px;
+	position: absolute;
+	margin-top: 10px;
+}.minutesCount{
+	margin-left: 243px;
+	position: absolute;
+	margin-top: 10px;
+}.secondsCount{
+	margin-left: 350px;
+	position: absolute;
+	margin-top: 10px;
+}.countDownHeader{
+	font-size: 32px;
+	font-family: 'segoeui';
+	margin-left: 10px;
 }
+
+.whatsNewDiv{
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+
+
+
+
