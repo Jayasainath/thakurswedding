@@ -1,400 +1,416 @@
 <html>
     <head>
-        <title>Animated Portfolio Gallery with jQuery</title>
+        <title>3D Wall Gallery</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="description" content="Portfolio Gallery with jQuery" />
-        <meta name="keywords" content="jquery, portfolio, gallery, image gallery, photos, sliding, thumbnails, navigation"/>
-        <%= stylesheet_link_tag "style" %>
-		<%= javascript_include_tag "Quicksand_Book_400.font" %>
-		<%= javascript_include_tag "cufon-yui" %>
+        <meta name="description" content="3D Wall Gallery" />
+        <meta name="keywords" content="jquery, perspective, 3D, webkit, safari, gallery, images, thumbnails, slider"/>
 		
-		<script type="text/javascript">
-			Cufon.replace('h1,h2');
-		</script>
-        <style type="text/css">
-			h1.title{
-				position:absolute;
-				right:20px;
-				top:0px;
-				font-weight:normal;
-				text-transform:uppercase;
-				font-size:56px;
-				color:#fff;
-				background:transparent url(bg.png) repeat top left;
-				padding:0px 15px 10px 15px;
-			}
-			h1.title span{
-				font-size:14px;
-				display:block;
-}
-			span.reference{
-				font-family:Arial;
-				position:fixed;
-				right:10px;
-				bottom:10px;
-				font-size:10px;
-			}
-			span.reference a{
-				color:#333;
-				text-transform:uppercase;
-				text-decoration:none;
-				margin-left:20px;
-			}
-		</style>
+		<%= stylesheet_link_tag "jquery.ui.theme" %>
+		<%= stylesheet_link_tag "jquery.ui.core" %>
+		<%= stylesheet_link_tag "jquery.ui.slider" %>
+		<%= stylesheet_link_tag "style_2" %>
+		<%= stylesheet_link_tag "thumbnail_slider" %>
     </head>
-
     <body>
-		<!-- <h1 class="title">Portfolio <span>Codrops Tutorial</span></h1> -->
-
-
-		<div class="pg_content">
-			<div id="pg_title" class="pg_title">
-				<h1 style="display:block;top:25px;">Shape Company Website Design</h1>
-				<h1>Summer of Love</h1>
-				<h1>Smashing Multimedia</h1>
-				<h1>Design Studio Project</h1>
-				<h1>Graphpedia Blog Innovative Solutions</h1>
-				<h1>My Portfolio Project</h1>
-				<h1>1st Webdesigner</h1>
-				<h1>Workspace Tools Conference</h1>
+		<div class="header">
+			<h1>3d Wall Gallery</h1>
+			<div id="pg_scrollWrapper" class="pg_scrollWrapper">
+				<div id="slider" class="slider"></div>
 			</div>
-			<div id="pg_preview">
-				<img class="pg_thumb" style="display:block;z-index:9999;" src="/assets/m-1.jpg" alt="l-1.jpg"/>
-				<img class="pg_thumb" src="/assets/m-2.jpg" alt="/assets/l-2.jpg"/>
-				<img class="pg_thumb" src="/assets/m-3.jpg" alt="/assets/l-3.jpg"/>
-				<img class="pg_thumb" src="/assets/m-4.jpg" alt="/assets/l-4.jpg"/>
-				<img class="pg_thumb" src="/assets/m-5.jpg" alt="/assets/l-5.jpg"/>
-				<img class="pg_thumb" src="/assets/m-6.jpg" alt="/assets/l-6.jpg"/>
-				<img class="pg_thumb" src="/assets/m-7.jpg" alt="/assets/l-7.jpg"/>
-				<img class="pg_thumb" src="/assets/m-8.jpg" alt="/assets/l-8.jpg"/>
-			</div>
-			<div id="pg_desc1" class="pg_description">
-				<div style="display:block;left:250px;">
-					<h2>Project Description</h2>
-					<p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
-				</div>
-				<div>
-					<h2>Project Description</h2>
-					<p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
-				</div>
-				<div>
-					<h2>Project Description</h2>
-					<p> Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-				</div>
-				<div>
-					<h2>Project Description</h2>
-					<p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
-				</div>
-				<div>
-					<h2>Project Description</h2>
-					<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-				</div>
-				<div>
-					<h2>Project Description</h2>
-					<p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
-				</div>
-				<div>
-					<h2>Project Description</h2>
-					<p> Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-				</div>
-				<div>
-					<h2>Project Description</h2>
-					<p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
-				</div>
-				
-			</div>
-			<div id="pg_desc2" class="pg_description">
-				<div style="display:block;left:250px;">
-					<h2>Technologies Used</h2>
-					<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-				</div>
-				<div>
-					<h2>Technologies Used</h2>
-					<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-				</div>
-				<div>
-					<h2>Technologies Used</h2>
-					<p>It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.</p>
-				</div>
-				<div>
-					<h2>Technologies Used</h2>
-					<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-				</div>
-				<div>
-					<h2>Technologies Used</h2>
-					<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-				</div>
-				<div>
-					<h2>Technologies Used</h2>
-					<p>It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.</p>
-				</div>
-				<div>
-					<h2>Technologies Used</h2>
-					<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-				</div>
-				<div>
-					<h2>Technologies Used</h2>
-					<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-				</div>
-				
-			</div>
+			
 		</div>
-
-
-		<div id="thumbContainter">
-			<div id="thumbScroller">
-				<div class="container">
-					<div class="content">
-						<div><a href="#"><img src="/assets/t-1.jpg" alt="" class="thumb" /></a></div>
-					</div>
-					<div class="content">
-						<div><a href="#"><img src="/assets/t-2.jpg" alt="" class="thumb" /></a></div>
-					</div>
-					<div class="content">
-						<div><a href="#"><img src="/assets/t-3.jpg" alt="" class="thumb" /></a></div>
-					</div>
-					<div class="content">
-						<div><a href="#"><img src="/assets/t-4.jpg" alt="" class="thumb" /></a></div>
-					</div>
-					<div class="content">
-						<div><a href="#"><img src="/assets/t-5.jpg" alt="" class="thumb" /></a></div>
-					</div>
-					<div class="content">
-						<div><a href="#"><img src="/assets/t-6.jpg" alt="" class="thumb" /></a></div>
-					</div>
-					<div class="content">
-						<div><a href="#"><img src="/assets/t-7.jpg" alt="" class="thumb" /></a></div>
-					</div>
-					<div class="content">
-						<div><a href="#"><img src="/assets/t-8.jpg" alt="" class="thumb" /></a></div>
-					</div>
+		<div class="wall">
+			<div id="pg_container" class="pg_container">
+				<ul id="pg_photos" class="pg_photos"><!-- calculate top-->
+					<li><a href="#1"><img src="/assets/l-1.jpg" alt="Here comes a description"/></a></li>
+					<li><a href="#2"><img src="/assets/l-2.jpg" alt="A description"/></a></li>
+					<li><a href="#3"><img src="/assets/l-3.jpg" alt="Another descritpion of the image"/></a></li>
+					<li><a href="#4"><img src="/assets/l-4.jpg" alt="Here comes a description"/></a></li>
+					<li><a href="#5"><img src="/assets/l-5.jpg" alt="Here comes a description"/></a></li>
+					<li><a href="#6"><img src="/assets/l-6.jpg" alt="Here comes a description"/></a></li>
+					<li><a href="#7"><img src="/assets/l-7.jpg" alt="Here comes a description"/></a></li>
+					<li><a href="#8"><img src="/assets/l-8.jpg" alt="Here comes a description"/></a></li>
+					<li><a href="#1"><img src="/assets/l-1.jpg" alt="Here comes a description"/></a></li>
 					
-				</div>
+				</ul>
 			</div>
 		</div>
-		<div id="overlay"></div>
-        <div>
-            <span class="reference">
-				<a href="http://dzineblog.com/2010/03/30-high-quality-free-website-templates-to-download.html" target="_blank">Template Collection by DzineBlog</a>
-				<a href="http://tympanus.net/codrops/2010/11/14/animated-portfolio-gallery/">back to the Codrops tutorial</a>
-			</span>
-		</div>
 
-        <!-- The JavaScript -->
+		<div class="footer">
+			<a class="back left" href="http://tympanus.net/Tutorials/ThumbnailsPreviewSlider/">Previous Demo: <strong>Thumbnails Preview Slider</strong></a>
+			<div class="thumbnailSlider" id="thumbnailSlider">
+				<ul class="ts_container">
+					<li><a href="#1">Image 1</a></li>
+					<li><a href="#2">Image 2</a></li>
+					<li><a href="#3">Image 3</a></li>
+					<li><a href="#4">Image 4</a></li>
+					<li><a href="#5">Image 5</a></li>
+					<li><a href="#6">Image 6</a></li>
+					<li><a href="#7">Image 7</a></li>
+					<li><a href="#8">Image 8</a></li>
+					<li><a href="#8">Image 1</a></li>
+					<li class="ts_thumbnails">
+						<div class="ts_preview_wrapper">
+							<ul class="ts_preview">
+								<li><img src="/assets/t-1.jpg" alt="Thumb 1" /></li>
+								<li><img src="/assets/t-2.jpg" alt="Thumb 2" /></li>
+								<li><img src="/assets/t-3.jpg" alt="Thumb 3" /></li>
+								<li><img src="/assets/t-4.jpg" alt="Thumb 4" /></li>
+								<li><img src="/assets/t-5.jpg" alt="Thumb 5" /></li>
+								<li><img src="/assets/t-6.jpg" alt="Thumb 6" /></li>
+								<li><img src="/assets/t-7.jpg" alt="Thumb 7" /></li>
+								<li><img src="/assets/t-8.jpg" alt="Thumb 8" /></li>
+								<li><img src="/assets/t-9.jpg" alt="Thumb 8" /></li>
+							</ul>
+						</div>
+						<span></span>
+					</li>
+				</ul>
+			</div>
+						
+		</div>
+		<%= javascript_include_tag "jquery-1.8.2" %>
+		<%= javascript_include_tag "jquery-ui.min" %>
 		<%= javascript_include_tag "jquery.easing.1.3" %>
-		<%= javascript_include_tag "jquery-1.6.2.min" %>
+		<%= javascript_include_tag "jquery.mousewheel.min" %>
+		<%= javascript_include_tag "jquery.ba-hashchange.min" %>
+		
+        <script type="text/javascript">
+			/*
+			the images preload plugin
+			*/
+			(function($) {
+				$.fn.preload = function(options) {
+					var opts 	= $.extend({}, $.fn.preload.defaults, options);
+					o			= $.meta ? $.extend({}, opts, this.data()) : opts;
+					var c		= this.length,
+						l		= 0;
+					return this.each(function() {
+						var $i	= $(this);
+						$('<img/>').load(function(i){
+							++l;
+							if(l == c) o.onComplete();
+						}).attr('src',$i.attr('src'));	
+					});
+				};
+				$.fn.preload.defaults = {
+					onComplete	: function(){return false;}
+				};
+			})(jQuery);
+		</script>
+		<script type="text/javascript">
+			/*
+			the thumbnail slider plugin
+			*/
+			(function($) {
+				
+				var methods = {
+					init 	: function(options) {
+					var opts = $.extend({}, $.fn.thumbnailSlider.defaults, options);
+					return this.each(function() {
+						var $this 			= $(this),
+						o 					= $.meta ? $.extend({}, opts, $pxs_container.data()) : opts;
+
+						var $ts_container	= $this.children('.ts_container'),
+						$ts_thumbnails		= $ts_container.children('.ts_thumbnails'),
+						$nav_elems			= $ts_container.children('li').not($ts_thumbnails),
+						total_elems			= $nav_elems.length,
+						$ts_preview_wrapper	= $ts_thumbnails.children('.ts_preview_wrapper'),
+						$arrow				= $ts_thumbnails.children('span'),
+						$ts_preview			= $ts_preview_wrapper.children('.ts_preview');
+
+						/*
+						calculate sizes for $ts_thumbnails:
+						width 	-> width thumbnail + border (2*5)
+						height 	-> height thumbnail + border + triangle height(6)
+						top		-> -(height plus margin of 5)
+						left	-> leftDot - 0.5*width + 0.5*widthNavDot
+							this will be set when hovering the nav,
+							and the default value will correspond to the first nav dot
+						 */
+						var w_ts_thumbnails	= o.thumb_width + 2*5,
+						h_ts_thumbnails	= o.thumb_height + 2*5 + 6,
+						t_ts_thumbnails	= -(h_ts_thumbnails + 5),
+						$first_nav		= $nav_elems.eq(0),
+						l_ts_thumbnails	= $first_nav.position().left - 0.5*w_ts_thumbnails + 0.5*$first_nav.width();
+
+						$ts_thumbnails.css({
+							width	: w_ts_thumbnails + 'px',
+							height	: h_ts_thumbnails + 'px',
+							top		: t_ts_thumbnails + 'px',
+							left	: l_ts_thumbnails + 'px'
+						});
+
+						/*
+						calculate the top and left for the arrow of the tooltip
+						top		-> thumb height + border(2*5)
+						left	-> (thumb width + border)/2 -width/2
+						 */
+						var t_arrow	= o.thumb_height + 2*5,
+						l_arrow	= (o.thumb_width + 2*5) / 2 - $arrow.width() / 2;
+						$arrow.css({
+							left	: l_arrow + 'px',
+							top		: t_arrow + 'px'
+						});
+
+						/*
+						calculate the $ts_preview width -> thumb width times number of thumbs
+						 */
+						$ts_preview.css('width' , total_elems*o.thumb_width + 'px');
+
+						/*
+						set the $ts_preview_wrapper width and height -> thumb width / thumb height
+						 */
+						$ts_preview_wrapper.css({
+							width	: o.thumb_width + 'px',
+							height	: o.thumb_height + 'px'
+						});
+
+						//hover the nav elems
+						$nav_elems.bind('mouseenter',function(){
+							var $nav_elem	= $(this),
+							idx			= $nav_elem.index();
+
+							/*
+							calculate the new left
+							for $ts_thumbnails
+							 */
+							var new_left	= $nav_elem.position().left - 0.5*w_ts_thumbnails + 0.5*$nav_elem.width();
+
+							$ts_thumbnails.stop(true)
+							.show()
+							.animate({
+								left	: new_left + 'px'
+							},o.speed,o.easing);
+
+							/*
+							animate the left of the $ts_preview to show the right thumb
+							 */
+							$ts_preview.stop(true)
+							.animate({
+								left	: -idx*o.thumb_width + 'px'
+							},o.speed,o.easing);
+
+							//zoom in the thumb image if zoom is true
+							if(o.zoom && o.zoomratio > 1){
+								var new_width	= o.zoomratio * o.thumb_width,
+								new_height	= o.zoomratio * o.thumb_height;
+
+								//increase the $ts_preview width in order to fit the zoomed image
+								var ts_preview_w	= $ts_preview.width();
+								$ts_preview.css('width' , (ts_preview_w - o.thumb_width + new_width)  + 'px');
+
+								$ts_preview.children().eq(idx).find('img').stop().animate({
+									width		: new_width + 'px',
+									height		: new_height + 'px'
+								},o.zoomspeed);
+							}
+
+						}).bind('mouseleave',function(){
+							//if zoom set the width and height to defaults
+							if(o.zoom && o.zoomratio > 1){
+								var $nav_elem	= $(this),
+								idx			= $nav_elem.index();
+								$ts_preview.children().eq(idx).find('img').stop().css({
+									width	: o.thumb_width + 'px',
+									height	: o.thumb_height + 'px'
+								});
+							}
+
+							$ts_thumbnails.stop(true)
+							.hide();
+
+						}).bind('click',function(e){
+							var $nav_elem	= $(this),
+							idx			= $nav_elem.index();
+							$nav_elems.removeClass('selected').eq(idx).addClass('selected');
+							o.onClick(idx);
+								//e.preventDefault();
+						});
+					});
+					},
+					update 	: function(idx) {
+						return this.each(function(){
+							var $this 			= $(this),
+								$ts_container	= $this.children('.ts_container'),
+								$ts_thumbnails	= $ts_container.children('.ts_thumbnails'),
+								$nav_elems		= $ts_container.children('li').not($ts_thumbnails);
+							$nav_elems.removeClass('selected').eq(idx).addClass('selected');
+						});	
+					}
+				};
+				
+				$.fn.thumbnailSlider = function(method) {
+					if ( methods[method] ) {
+						return methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
+					} else if ( typeof method === 'object' || ! method ) {
+						return methods.init.apply( this, arguments );
+					} else {
+						$.error( 'Method ' +  method + ' does not exist on jQuery.thumbnailSlider' );
+					}  
+				};
+				$.fn.thumbnailSlider.defaults = {
+					speed		: 100,//speed of each slide animation
+					easing		: 'jswing',//easing effect for the slide animation
+					thumb_width	: 75,//your photos width
+					thumb_height: 75,//your photos height
+					zoom		: false,//zoom animation for the thumbs
+					zoomratio	: 1.3,//multiplicator for zoom (must be > 1)
+					zoomspeed	: 15000,//speed of zoom animation
+					onClick		: function(){return false;}//click callback
+				};
+			})(jQuery);
+		</script>
 		<script type="text/javascript">
 			$(function() {
-				//index of current item
-				var current				= 0;
-				//speeds / ease type for animations
-				var fadeSpeed			= 400;
-				var animSpeed			= 600;
-				var easeType			= 'easeOutCirc';
-				//caching
-				var $thumbScroller		= $('#thumbScroller');
-				var $scrollerContainer	= $thumbScroller.find('.container');
-				var $scrollerContent	= $thumbScroller.find('.content');
-				var $pg_title 			= $('#pg_title');
-				var $pg_preview 		= $('#pg_preview');
-				var $pg_desc1 			= $('#pg_desc1');
-				var $pg_desc2 			= $('#pg_desc2');
-				var $overlay			= $('#overlay');
-				//number of items
-				var scrollerContentCnt  = $scrollerContent.length;
-				var sliderHeight		= $(window).height();
-				//we will store the total height
-				//of the scroller container in this variable
-				var totalContent		= 0;
-				//one items height
-				var itemHeight			= 0;
+				var $thumbnailSlider= $('#thumbnailSlider'),
+					$slider			= $('#slider'),
+					$pg_photos		= $('#pg_photos'),
+					$pg_container	= $('#pg_container'),
+					$pg_scrollWrapper	= $('#pg_scrollWrapper'),
+					$pg_photos_elem	= $pg_photos.children(),
+					$pg_photos_img	= $pg_photos_elem.find('img'),
+					is_safari = navigator.userAgent.toLowerCase().indexOf('safari') > -1 
+								&& 
+									  navigator.userAgent.toLowerCase().indexOf('chrome') == -1,
+					pg_photos_width	= 0;				  
 				
-				//First let's create the scrollable container,
-				//after all its images are loaded
-				var cnt		= 0;
-				$thumbScroller.find('img').each(function(){
-					var $img 	= $(this);
-					$('<img/>').load(function(){
-						++cnt;
-						if(cnt == scrollerContentCnt){
-							//one items height
-							itemHeight = $thumbScroller.find('.content:first').height();
-							buildScrollableItems();
-							//show the scrollable container
-							$thumbScroller.stop().animate({'left':'0px'},animSpeed);
-						}
-					}).attr('src',$img.attr('src'));
+				//preload the images				
+				$pg_photos_img.preload({
+					onComplete	: function(){
+						init();
+						//force the hashchange event
+						//so that it slides to the image passed in the url
+						$(window).hashchange();
+					}
+				});
+				function init(){
+					initThumbnailSlider();
+					configGallery();
+					initSlider();
+					initEvents();
+				}
+				//init the thumbs slider plugin
+				function initThumbnailSlider(){
+					$thumbnailSlider.thumbnailSlider({
+							thumb_width	: 75,
+						thumb_height: 75
+						});
+				}
+				function configGallery(){
+					$('BODY').css('overflow-x','hidden');
+					//we need to set the width of the $pg_photos,
+					//which is the sum of its childrens width
+						$pg_photos.children().each(function(){
+							pg_photos_width += $(this).outerWidth(true);
+						});
+						$pg_photos.css('width',pg_photos_width+'px');
+				}
+				function initSlider(){
+					$pg_scrollWrapper.show();
+						//innitialize the slider
+					var old_value 	= 0, //last value of the slider
+						dir			= 1; //direction 	
+						$slider.slider('destroy').slider({
+							orientation	: 'horizontal',
+							max			: pg_photos_width - $pg_photos.children(':last').outerWidth(true),
+							min			: 0,
+							value		: 0,
+							slide		: function(event, ui) {
+								$pg_photos.css('left',-ui.value+'px');						
+							//the 3d effect
+								if(is_safari){
+								//the dir will define the value for the rotationY (negative or positive)
+								dir 		= (old_value < ui.value) ? 1 : -1;
+								old_value 	= ui.value;	
+									if(dir == 1 && !$pg_container.hasClass('turnLeft'))	
+									$pg_container.addClass('turnLeft')
+												 .removeClass('turnRight flat');
+									else if(dir == -1 && !$pg_container.hasClass('turnRight'))	
+									$pg_container.addClass('turnRight')
+												 .removeClass('turnLeft flat');
+								}	
+							},
+							stop: function(event, ui) {
+								if(is_safari){
+									$pg_container.addClass('flat')
+											 .removeClass('turnLeft turnRight');
+								}			 
+							}
+						});
+				}
+				function initEvents(){
+					//if we mouse over a photo, show the description sored in the alt attr
+					$pg_photos_elem.bind('mouseenter',function(e){
+						var $e		= $(this);
+							$img	= $e.find('img'),
+							descr	= $img.attr('alt');
+						
+						$('<span>'+ descr +'</span>').hide().insertAfter($img).fadeIn();
+					}).bind('mouseleave',function(e){
+						var $e		= $(this);
+							$descr	= $e.find('span');
+						
+						$descr.fadeOut();
 				});
 				
-				//when we click an item from the scrollable container
-				//we want to display the items content
-				//we use the index of the item in the scrollable container
-				//to know which title / image / descriptions we will show
-				$scrollerContent.bind('click',function(e){
-					var $this 				= $(this);
-					
-					var idx 				= $this.index();
-					//if we click on the one shown then return
-					if(current==idx) return;
-					
-					//if the current image is enlarged,
-					//then we will remove it but before
-					//we animate it just like we would do with the thumb
-					var $pg_large			= $('#pg_large');
-					if($pg_large.length > 0){
-						$pg_large.animate({'left':'350px','opacity':'0'},animSpeed,function(){
-							$pg_large.remove();
+					//slide as we scroll with the mouse
+						$pg_container.mousewheel(function(e, delta) {
+						var speed	= 450,
+							inc 	= -delta*speed,
+								min	= $slider.slider('option','min'),
+								max = $slider.slider('option','max');
+							
+							var val = $slider.slider('value') + inc;
+							if(val < min)
+								val = min;
+							else if(val > max)
+								val = max;
+							
+							$slider.slider('value', val);
+						$pg_photos.stop().animate({
+								left	: -(val) + 'px'
+						},800,'easeOutExpo',function(){
+							if(is_safari){
+								$pg_container.addClass('flat')
+											 .removeClass('turnLeft turnRight');
+							}	
+						});
+						if(is_safari){
+							if(delta < 0 && !$pg_container.hasClass('turnLeft'))	
+								$pg_container.addClass('turnLeft')
+											 .removeClass('turnRight flat');
+							else if(delta > 0 && !$pg_container.hasClass('turnRight'))	
+								$pg_container.addClass('turnRight')
+											 .removeClass('turnLeft flat');
+						}
+							return false;
+						});
+						
+						$(window).hashchange( function(){
+						//the index in the url hash
+							var idx 			= location.hash.split('#')[1];
+						if(!idx){
+							//we assume the current is the first one,
+							//so set the first thumb nav elem as selected
+							$thumbnailSlider.thumbnailSlider('update',0);
+							return;
+						}
+						//set the thumb nav elem as selected
+						$thumbnailSlider.thumbnailSlider('update',idx-1);
+						//based on the current left value for the pg_photos, 
+						//and the left of the element, we know how much to slide
+							var	current_left 	= parseFloat($pg_photos.css('left'),10),
+							elem_left		= $pg_photos_elem.eq(idx-1).offset().left;
+						//update the ui slider 
+							$slider.slider('value',Math.abs(parseInt(current_left - elem_left,10)));
+						//slide to element
+							$pg_photos.stop().animate({
+								left	: current_left - elem_left + 'px'
+							},800,'easeInOutExpo');
 						});
 					}
-					
-					//get the current and clicked items elements
-					var $currentTitle 		= $pg_title.find('h1:nth-child('+(current+1)+')');
-					var $nextTitle 			= $pg_title.find('h1:nth-child('+(idx+1)+')');
-					var $currentThumb		= $pg_preview.find('img.pg_thumb:eq('+current+')');
-					var $nextThumb			= $pg_preview.find('img.pg_thumb:eq('+idx+')');
-					var $currentDesc1 		= $pg_desc1.find('div:nth-child('+(current+1)+')');
-					var $nextDesc1 			= $pg_desc1.find('div:nth-child('+(idx+1)+')');
-					var $currentDesc2 		= $pg_desc2.find('div:nth-child('+(current+1)+')');
-					var $nextDesc2 			= $pg_desc2.find('div:nth-child('+(idx+1)+')');
-					
-					//the new current is now the index of the clicked scrollable item
-					current		 			= idx;
-					
-					//animate the current title up,
-					//hide it, and animate the next one down
-					$currentTitle.stop().animate({'top':'-50px'},animSpeed,function(){
-						$(this).hide();
-						$nextTitle.show().stop().animate({'top':'25px'},animSpeed);
-					});
-					
-					//show the next image,
-					//animate the current to the left and fade it out
-					//so that the next gets visible
-					$nextThumb.show();
-					$currentThumb.stop().animate({'left': '350px','opacity':'0'},animSpeed,function(){
-						$(this).hide().css({
-							'left'		: '250px',
-							'opacity'	: 1,
-							'z-index'	: 1
-						});
-						$nextThumb.css({'z-index':9999});
-					});
-					
-					//animate both current descriptions left / right and fade them out
-					//fade in and animate the next ones right / left
-					$currentDesc1.stop().animate({'left':'205px','opacity':'0'},animSpeed,function(){
-						$(this).hide();
-						$nextDesc1.show().stop().animate({'left':'250px','opacity':'1'},animSpeed);
-					});
-					$currentDesc2.stop().animate({'left':'295px','opacity':'0'},animSpeed,function(){
-						$(this).hide();
-						$nextDesc2.show().stop().animate({'left':'250px','opacity':'1'},animSpeed);
-					});
-					e.preventDefault();
-				});
-				
-				//when we click a thumb, the thumb gets enlarged,
-				//to the sizes of the large image (fixed values).
-				//then we load the large image, and insert it after
-				//the thumb. After that we hide the thumb so that
-				//the large one gets displayed
-				$pg_preview.find('.pg_thumb').bind('click',showLargeImage);
-				
-				//enlarges the thumb
-				function showLargeImage(){
-					//if theres a large one remove
-					$('#pg_large').remove();
-					var $thumb 		= $(this);
-					$thumb.unbind('click');
-					var large_src 	= $thumb.attr('alt');
-
-					$overlay.fadeIn(200);
-					//animate width to 600px,height to 500px
-					$thumb.stop().animate({
-						'width'	: '600px',
-						'height': '500px'
-					},500,function(){
-						$('<img id="pg_large"/>').load(function(){
-							var $largeImg = $(this);
-							$largeImg.insertAfter($thumb).show();
-							$thumb.hide().css({
-								'left'		: '250px',
-								'opacity'	: 1,
-								'z-index'	: 1,
-								'width'		: '360px',
-								'height'	: '300px'
-							});
-							//when we click the large image
-							//we revert the animation
-							$largeImg.bind('click',function(){
-								$thumb.show();
-								$overlay.fadeOut(200);
-								$(this).stop().animate({
-									'width'	: '360px',
-									'height': '300px'
-								},500,function(){
-									$(this).remove();
-									$thumb.css({'z-index'	: 9999});
-									//bind again the click event
-									$thumb.bind('click',showLargeImage);
-								});
-								
-							});
-						}).attr('src',large_src);
-					});
-				}
-				
-				//resize window event:
-				//the scroller container needs to update
-				//its height based on the new windows height
-				$(window).resize(function() {
-					var w_h			= $(window).height();
-					$thumbScroller.css('height',w_h);
-					sliderHeight	= w_h;
-				});
-				
-				//create the scrollable container
-				//taken from Manos :
-				//http://manos.malihu.gr/jquery-thumbnail-scroller
-				function buildScrollableItems(){
-					totalContent = (scrollerContentCnt-1)*itemHeight;
-					$thumbScroller.css('height',sliderHeight)
-					.mousemove(function(e){
-						if($scrollerContainer.height()>sliderHeight){
-							var mouseCoords		= (e.pageY - this.offsetTop);
-							var mousePercentY	= mouseCoords/sliderHeight;
-							var destY			= -(((totalContent-(sliderHeight-itemHeight))-sliderHeight)*(mousePercentY));
-							var thePosA			= mouseCoords-destY;
-							var thePosB			= destY-mouseCoords;
-							if(mouseCoords==destY)
-								$scrollerContainer.stop();
-							else if(mouseCoords>destY)
-								$scrollerContainer.stop()
-							.animate({
-								top: -thePosA
-							},
-							animSpeed,
-							easeType);
-							else if(mouseCoords<destY)
-								$scrollerContainer.stop()
-							.animate({
-								top: thePosB
-							},
-							animSpeed,
-							easeType);
-						}
-					}).find('.thumb')
-					.fadeTo(fadeSpeed, 0.6)
-					.hover(
-					function(){ //mouse over
-						$(this).fadeTo(fadeSpeed, 1);
-					},
-					function(){ //mouse out
-						$(this).fadeTo(fadeSpeed, 0.6);
-					}
-				);
-				}
 			});
-		</script>
+        </script>
     </body>
 </html>
