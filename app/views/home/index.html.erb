@@ -200,47 +200,6 @@
                             <p class="minutesCount">Min</p>
                             <p class="secondsCount">Sec</p>
                         </div>
-                       
-                        <!-- <article class="countdownTimerClass">
-                            <h3 class="prev-indent-bot">Countdown</h3>
-                            <p>
-                                
-                                <div id="countdown_dashboard">
-                                    <div class="dash weeks_dash">
-                                        <span class="dash_title">weeks</span>
-                                        <div class="digit">0</div>
-                                        <div class="digit">0</div>
-                                    </div>
-
-                                    <div class="dash days_dash">
-                                        <span class="dash_title">days</span>
-                                        <div class="digit">0</div>
-                                        <div class="digit">0</div>
-                                    </div>
-
-                                    <div class="dash hours_dash">
-                                        <span class="dash_title">hours</span>
-                                        <div class="digit">0</div>
-                                        <div class="digit">0</div>
-                                    </div>
-
-                                    <div class="dash minutes_dash">
-                                        <span class="dash_title">minutes</span>
-                                        <div class="digit">0</div>
-                                        <div class="digit">0</div>
-                                    </div>
-
-                                    <div class="dash seconds_dash">
-                                        <span class="dash_title">seconds</span>
-                                        <div class="digit">0</div>
-                                        <div class="digit">0</div>
-                                    </div>
-                                </div>
-                                
-                                
-                                
-                            </p>
-                        </article> -->
                         
                         <article class="whatsNewDiv">
                         	<h3 class="prev-indent-bot">What’s New?</h3>
@@ -261,14 +220,14 @@
         	<div class="container_12">
             	<div class="wrapper">
                 	<div class="grid_4">
-                    	<div>Interior Design &copy; 2011 <a class="link color-3" href="#">Privacy Policy</a></div>
-                        <div><a rel="nofollow" target="_blank" href="http://www.templatemonster.com/">Website Template</a> by TemplateMonster.com | <a rel="nofollow" target="_blank" href="http://www.html5xcss3.com/">html5xcss3.com</a></div>
+                    	<!-- <div>Interior Design &copy; 2011 <a class="link color-3" href="#">Privacy Policy</a></div>
+                        <div><a rel="nofollow" target="_blank" href="http://www.templatemonster.com/">Website Template</a> by TemplateMonster.com | <a rel="nofollow" target="_blank" href="http://www.html5xcss3.com/">html5xcss3.com</a></div> -->
                         <!-- {%FOOTER_LINK} -->
                     </div>
-                    <div class="grid_4">
-                    	<span class="phone-numb"><span>+91</span> 99493 90335</span>
+                    <div class="phoneNumberClass">
+                        <span>+91</span> 99493 90335
                     </div>
-                    <div class="grid_4">
+                    <div class="fbItemClass">
                     	<ul class="list-services">
                         	<li>
                                 <div class="fb-like" data-href="http://arcane-thicket-8918.herokuapp.com/" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="trebuchet ms"></div>
@@ -290,48 +249,30 @@
     <%= javascript_include_tag "jquery-Countdown-1.0" %>
     <%= javascript_include_tag "jquery.opacityrollover" %>   
     <%= javascript_include_tag "scripts" %>
+        
+    <script type="text/javascript">
     
-    <!-- Start of Script for Count Down Timer -->
-    <!-- //         jQuery(document).ready(function() {
-    //             $('#countdown_dashboard').countDown({
-    //                 targetDate: {
-    //                     'day':      07,
-    //                     'month':    12,
-    //                     'year':     2012,
-    //                     'hour':     20,
-    //                     'min':      27,
-    //                     'sec':      0
-    //                 }
-    //             });
-    //         });
+        (function(){
+            var selectTime = new Date(calculateTimeTillWedding());
+            console.log("time: " +selectTime);
             
-    //         $('#countdown-container').countdown({
-    //             stepTime: 60,
-    //             format: 'hh:mm:ss',
-    //             startTime: "12:32:55",
-    //             digitImages: 6,
-    //             digitWidth: 53,
-    //             digitHeight: 77,
-    //             timerEnd: function() { alert('end!!'); },
-    //             image: "digits.png"
-    //         });
-                  
-    //         $(function() {
-    //             $('#countdown-container').countdown({
-    //                 date: "June 7, 2087 15:03:26"
-    //             });
-    //         }); -->
-            
+            $('#countdown-container').countdown({
+              image: '/assets/digits.png',
+              startTime: ''+Math.floor(numDays)+''+numHours+''+numMin+''+numSec
+            });
+        })();    
         
-        <script type="text/javascript">
-            (function(){
-                $('#countdown-container').countdown({
-                  image: '/assets/digits.png',
-                  startTime: '01 12 12 00'
-                });
-            })();
-        </script>
+        function calculateTimeTillWedding(){
+            var now = new Date();
+            var mDate = new Date("2012", "11", "07", "20", "27", "00", "00");
+            console.log("now: " +now.getTime());
+            console.log("mDate: " +mDate.getTime());
+            var time = mDate.getDate() - now.getDate();
+            return time; 
+        }
         
+    </script>
+    
         
     <!-- End of Script for Count Down Timer -->
     

@@ -12,11 +12,93 @@
 		<%= stylesheet_link_tag "thumbnail_slider" %>
     </head>
     <body>
+    	
+    	<!--==============================header=================================-->
+    <header>
+    	<div class="row-1">
+        	<div class="main">
+            	<div class="container_12">
+                	<div class="grid_12">
+                    	<nav>
+                            <ul class="menu">
+                                <div class='menuListItemsDiv'>
+                                    <div class='menuListItemsClass'>
+                                        <li>
+                                            <%= link_to "Home", :controller => 'home', :action => 'index' %>    
+                                        </li>
+                                    </div>
+                                    <div class='menuListItemsClass'>
+                                        <li>
+                                            <%= link_to "Gallery", :controller => 'home', :action => 'gallery' %>    
+                                        </li>
+                                        
+                                    </div>
+                                    <div class='menuListItemsClass'>
+                                        <li>
+                                            <%= link_to "Story", :controller => 'home', :action => 'index' %>    
+                                        </li>
+                                    </div>
+                                    <div class='menuListItemsClass'>
+                                        <li>
+                                            <%= link_to "Contact Us", :controller => 'home', :action => 'contact_us' %>    
+                                        </li>
+                                    </div>
+                                    <div class='menuListItemsClass'>
+                                        <li>
+                                            <%= link_to "Invitation", :controller => 'home', :action => 'invitation_view' %>    
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="row-2">
+        	<div class="main">
+            	<div class="container_12">
+                	<div class="grid_9">
+                    	<h1>
+                            <a class="logo" href="index.html">Th<strong>a</strong>kur's</a>
+                            <span>Wedding</span>
+                        </h1>
+                    </div>
+                    <div class="grid_3">
+                    	<form id="search-form" method="post" enctype="multipart/form-data">
+                            <fieldset>	
+                                <div class="search-field">
+                                    <input name="search" type="text" />
+                                    <a class="search-button" href="#" onClick="document.getElementById('search-form').submit()"><span>search</span></a>	
+                                </div>						
+                            </fieldset>
+                        </form>
+                     </div>
+                     <div class="clear"></div>
+                </div>
+            </div>
+        </div>    	
+    </header>
+    
 		<div class="header">
 			<h1>3d Wall Gallery</h1>
 			<div id="pg_scrollWrapper" class="pg_scrollWrapper">
 				<div id="slider" class="slider"></div>
 			</div>
+			
+		<!-- KDL-32NX650
+				KDL-32HX750
+				KDL-32EX650
+				KDL-32EX550
+				KLV-32EX330
+				KLV-32CX420
+				KLV-32CX350
+				KDL-32NX650
+				KDL-32HX750
+				KDL-32EX650
+				KDL-32EX550 -->
+			
 			
 		</div>
 		<div class="wall">
@@ -60,7 +142,6 @@
 								<li><img src="/assets/t-6.jpg" alt="Thumb 6" /></li>
 								<li><img src="/assets/t-7.jpg" alt="Thumb 7" /></li>
 								<li><img src="/assets/t-8.jpg" alt="Thumb 8" /></li>
-								<li><img src="/assets/t-9.jpg" alt="Thumb 8" /></li>
 							</ul>
 						</div>
 						<span></span>
