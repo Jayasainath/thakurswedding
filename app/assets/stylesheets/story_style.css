@@ -1,0 +1,27 @@
+body{
+	background: #FFF;
+	color: #333;
+	font-family: 'segoeui';
+}
+
+@font-face{
+	src:url('segoeui.ttf');
+	font-family: 'segoeui';
+}
+
+p{
+	margin: 20px;
+}
+
+.wish{
+	font-size: 32px;
+}
+
+.firstRow{
+	font-size: 24px;
+}
+
+.secondRow{
+	font-size: 24px;
+}
+

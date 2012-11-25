@@ -17,5 +17,9 @@ class HomeController < ApplicationController
 		render "invitation"
 	end
 
+	def story
+		
+	end
+
 
 end
