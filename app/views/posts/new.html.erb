@@ -7,19 +7,12 @@
 	    <%= stylesheet_link_tag "grid" %>
 
 	    <%= javascript_include_tag "jquery-1.6.2.min" %>
+	    	    
 	</head>
 
        
 	<body id="page5">
-		<!--[if lt IE 7]>
-	        <div style=' clear: both; text-align:center; position: relative;'>
-	            <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"  alt="" /></a>
-	        </div>
-		<![endif]-->
-	    <!--[if lt IE 9]>
-	   		<script type="text/javascript" src="js/html5.js"></script>
-	        <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
-		<![endif]-->
+		
 		<!--==============================header=================================-->
 	    <header>
 	    	<div class="row-1">
@@ -36,7 +29,7 @@
 	                                    </div>
 	                                    <div class='menuListItemsClass'>
 	                                        <li>
-	                                            <%= link_to "Home", :controller => 'home', :action => 'index' %>    
+	                                            <%= link_to "Gallery", :controller => 'home', :action => 'gallery' %>    
 	                                        </li>
 	                                        
 	                                    </div>
@@ -155,16 +148,18 @@
 	                                <dd><strong>E-mail:</strong> <a href="#">mail@demolink.org</a></dd>
 	                            </dl>
 	                        </article>
-	                        <article class="grid_9">
-	                        	<h3 class="prev-indent-bot">Wishes</h3>
+	                        <h3 class="wishHeader">Wishes</h3>
+	                        <div class="wisherListDiv">
 	                            <% unless @posts.blank? %>
 	                            	<% @posts.each do |post| %>
-		                            	<div class="wisherDiv"><strong><%= post.name %> Says:</strong></div>
+		                            	<div class="<%= cycle("wishWrapperOdd", "wishWrapperEven") %>">
+			                            	<div class="wisherDiv"><strong><%= post.name %></strong> says:</div>
+			                            	<div class="wishDiv"><%= post.message %></div>
+		                            	</div>
 		                            	<br>
-		                            	<div class="wishDiv"><%= post.message %></div>
 	                            	<% end %>
 	                            <% end %>
-	                        </article>
+	                        </div>
 	                    </div>
 	                </div>
 	            </div>
@@ -198,5 +193,16 @@
 	    </footer>
 	    
 	    <%= debug params %>
+	    
+	    <script>
+	    	jQuery(document).ready(function($){
+	    		
+	    	});
+	    	
+	    </script>
+
+	    
+
+	    
 	</body>
 </html>

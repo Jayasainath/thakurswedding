@@ -1,5 +1,6 @@
 Sites::Application.routes.draw do
   resources :posts
+  match "/404", :to => "errors#not_found"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

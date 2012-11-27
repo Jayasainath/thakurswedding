@@ -12,7 +12,7 @@ body {font-family:Arial, Helvetica, sans-serif;font-size:100%; color:#262626;min
 .bg-top {width:100%; background:url(bg-top-tail.jpg) center top repeat-x}
 .bg-top-2 {width:100%; background:url(bg-top-tail2.jpg) center top repeat-y}
 .bg {width:100%; background:url(bg-top.jpg) center top no-repeat}
-.bg-bot {width:100%; background:url(bg-bot-tail.gif) center top repeat-x #fff; padding:30px 0 55px}
+.bg-bot {width:100%; background:url(bg-bot-tail.gif) center top repeat-x #fff; padding:30px 0 10px}
 	#page3 .bg-bot, #page4 .bg-bot {padding:30px 0 49px}
 .main {width:980px;padding:0;margin:0 auto;font-size:0.8125em;line-height:1.6153em}
 a {color:#ff9601; outline:none}
@@ -238,9 +238,15 @@ footer {width:100%;padding:40px 0 33px;background:url(footer-tail.gif) center to
 .phoneNumberClass {display:inline-block;font-size:42px;line-height:1.2em;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;letter-spacing:-1px;margin-top:-4px;width: 280px; position: absolute; left: 10px;
 position: absolute;
 left: 0px;}
-	.phoneNumberClass span {display:inline-block;	font-size:28px;	color:#949494;	padding-top:3px; position: absolute; left: 0px;
-position: absolute;
-left: 0px;}
+	.phoneNumberClass span{
+		display:inline-block;
+		font-size:28px;
+		color:#949494;
+		padding-top:3px;
+		position:absolute;
+		left: 0px;
+		position: absolute;
+		left: 0px;}
 
 .fbItemClass{
 	width: 400px;
@@ -534,8 +540,37 @@ img#pg_large{
 
 .whatsNewDiv{
 	width: 300px;
-	height: 300px;
+	height: 200px;
 	float: left;
+}
+
+
+.wisherListDiv{
+	float: left;
+	position: relative;
+	width: 500px;
+	background: #CCC;
+	padding: 20px;
+	height: 230px;
+	overflow-y: scroll;
+	left: 18%;
+}
+
+.wishWrapperOdd{
+	border: 1px solid #333;
+	padding: 5px;
+	text-align: left;
+	webkit-align: left;
+}
+
+.wishWrapperEven{
+	border: 1px solid #333;
+	padding: 5px;
+	text-align: right;
+}.wishHeader{
+	position: relative;
+	left: 18%;
+	margin-bottom: 10px;
 }
 
 

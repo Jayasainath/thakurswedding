@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
 	def index
-		
+		render "new"
 	end
 
 	def new
