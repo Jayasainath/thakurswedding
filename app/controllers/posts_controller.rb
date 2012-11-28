@@ -23,7 +23,7 @@ class PostsController < ApplicationController
 	end
 
 	def show
-
+		@posts = Post.find(:all)
 	end
 
 
