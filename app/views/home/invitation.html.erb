@@ -1,8 +1,7 @@
 <html>
 	<head>
-		<title>Invitation</title>
+		<title><%= set_root_title "Invitation" %></title>
 		<%= stylesheet_link_tag "invitation_css" %>
-
 		<%= stylesheet_link_tag "style" %>		
 	</head>
 	<body>
@@ -75,73 +74,62 @@
     </header>
     
 		<vr></vr>
-		<div id="leftDiv">
+		<!-- <div id="leftDiv">
 			<h3>Wedding Invitation</h3>
 			
+		</div> -->
+		
+		<div class="bodyDiv">
+			<div class="invitationDiv">
+			 	<p class="invitationParagraph"> <span class="nameHeaderClass">Invitation</span>
+			 	<br>I am glad to share the Good News of
+				<br>my Wedding with
+				<div class='nameClass'>Nupur</div>
+				<br>on 7th December, 2012 at 08:27 pm.
+				<br>Please consider this as a personal invitation,
+				<br>as I am preparing to walk down the aisle
+				<br>and begin a new chapter in my Life.
+				<br>Bless our Marriage with your Presence.<br>
+				<br>Venue:
+				<br>Katkar Mangal Function Hall,
+				<br>Near Khamidkar Apartments, Murarjipet, Solapur.<br>
+				<br>Reception:
+				<br>9th December, 2012, 6.00pm onwards
+				<br>at Chichond, Adilabad Dist
+				<br>Call me @ 9949390335
+				<br>Thanks
+				<div class='nameClass'>Thakur Amarsingh Chauhan</div>
+			</div> 
 		</div>
 		
-		<%= image_tag "" %>
-		
-		<div id="rightDiv">
-			<p>Together with their parents</p>
-			<p class='groom'>Chi. Thakur Amar Singh Chouhan</p>
-			<p class='andClass'>&</p>
-			<p class='bride'>Chi. Sow. Thakur Nupur</p>
-			
-			<p>Request the honour of your presence at their marraige</p><br>
-			
-			<p class="sub_headers">Rathjaga:</p>
-			<p>On Tuesday</p>
-			<p></p>
-			
-			<p class="sub_headers">Mandva Tel Mayan:</p>
-			<p>On Wednesday 5th December 2012</p>
-			
-			<p class="sub_headers">Barath:</p>
-			<p>On Friday 7th December 2012, 6:00 P.M. onwards</p>
-			<p>Solapur</p>
-			
-			<p class="sub_headers">Sumuhurtham:</p>
-			<p>On Friday 7th December 2012, at 8:27 P.M.</p>
-			
-			<p class="sub_headers">Venue:</p>
-			<p>Katkar Mangal Function Hall,</p>
-			<p>Near Khamidkar Apartments, Murajipet, Solapur, Maharashtra</p>
-			
-			<p class="sub_headers">Reception:</p>
-			<p>On Sunday 9th December 2012, 6:00 P.M. onwards</p>
-			<p>Chichond, Bhainsa Dist, Adilabad - 504103</p>
-			
-			<p></p>
-		</div>
+		 
+		 
 		
 		<!--==============================footer=================================-->
 	    <footer>
-	        <div class="main">
-	        	<div class="container_12">
-	            	<div class="wrapper">
-	                	<div class="grid_4">
-	                    	<div>Interior Design &copy; 2011 <a class="link color-3" href="#">Privacy Policy</a></div>
-	                        <div><a rel="nofollow" target="_blank" href="http://www.templatemonster.com/">Website Template</a> by TemplateMonster.com | <a rel="nofollow" target="_blank" href="http://www.html5xcss3.com/">html5xcss3.com</a></div>
-	                        <!-- {%FOOTER_LINK} -->
-	                    </div>
-	                    <div class="grid_4">
-	                    	<span class="phone-numb"><span>+91</span> 99493 90335</span>
-	                    </div>
-	                    <div class="grid_4">
-	                    	<ul class="list-services">
-	                        	<li>
-	                                <div class="fb-like" data-href="http://arcane-thicket-8918.herokuapp.com/" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="trebuchet ms"></div>
-	                            </li>
-	                            <!-- <li><a class="item-2" href="#"></a></li>
-	                            <li><a class="item-3" href="#"></a></li>
-	                            <li><a class="item-4" href="#"></a></li> -->
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </footer>
+            <div class="main">
+            	<div class="container_12">
+                	<div class="wrapper">
+                    	<!-- <div class="grid_4">
+                        	<div>Interior Design &copy; 2011 <a class="link color-3" href="#">Privacy Policy</a></div>
+                            <div><a rel="nofollow" target="_blank" href="http://www.templatemonster.com/">Website Template</a> by TemplateMonster.com | <a rel="nofollow" target="_blank" href="http://www.html5xcss3.com/">html5xcss3.com</a></div> -->
+                            <!-- {%FOOTER_LINK}
+                        </div> -->
+                        <div class="phoneNumberClass">
+                            <span class="phoneCodeSpan">+91</span>
+                            <span class="phoneNumberSpan"> 99493 90335</span>
+                        </div>
+                        <div class="fbItemClass">
+                        	<ul class="list-services">
+                            	<li>
+                                    <div class="fb-like" data-href="http://arcane-thicket-8918.herokuapp.com/" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="trebuchet ms"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 		
 	    <%= javascript_include_tag "scripts" %>
 		

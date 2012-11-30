@@ -20,5 +20,38 @@ body{
 
 @font-face{
 	src:url('Capture_it');
-	font-family: 'Captureitregular'
+	font-family: 'Captureitregular';
+}
+
+@font-face{
+	src:url('amazone_bt.ttf');
+	font-family: 'amazonebt';
+}
+
+.bodyDiv{
+	background-image: url('invitation_main_background.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 876px;
+	height: 810px;
+}
+
+.invitationDiv{
+	font-family: 'amazonebt';
+	text-align: center;
+	background-image: url("invitation_background.png");
+	background-repeat: no-repeat;
+	width: 600px;
+	padding-top: 15px;
+	font-size: 18px;
+	height: 730px;
+	position: relative;
+	left: 30%;
+}.nameClass{
+	color: #F00;
+	height: 10px;
+}.nameHeaderClass{
+	color: #F00;
+	text-decoration: underline;
+}.invitationParagraph{
+	margin-bottom: 10px;
 }

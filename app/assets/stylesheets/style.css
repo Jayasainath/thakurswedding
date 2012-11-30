@@ -235,22 +235,30 @@ dl strong {float:left; width:80px; font-weight:normal}
 .buttons a {margin-left:10px; padding:10px 42px 11px}
 /****************************footer************************/
 footer {width:100%;padding:40px 0 33px;background:url(footer-tail.gif) center top repeat-x #fff}
-.phoneNumberClass {display:inline-block;font-size:42px;line-height:1.2em;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;letter-spacing:-1px;margin-top:-4px;width: 280px; position: absolute; left: 10px;
-position: absolute;
-left: 0px;}
-	.phoneNumberClass span{
-		display:inline-block;
-		font-size:28px;
-		color:#949494;
-		padding-top:3px;
-		position:absolute;
-		left: 0px;
-		position: absolute;
-		left: 0px;}
-
-.fbItemClass{
-	width: 400px;
-	height: 500px;
+.phoneNumberClass {
+	display:inline-block;
+	line-height:1.2em;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	letter-spacing:-1px;
+	width: 280px;
+}.phoneCodeSpan{
+	position: absolute;
+	color: #949494;
+	font-size: 28px;
+	margin-top: 17px;
+}.phoneNumberSpan{
+	display: inline-block;
+	font-size: 42px;
+	color: black;
+	padding-top: 12px;
+	position: relative;
+	left: 48px;
+}.fbItemClass{
+	width: 490px;
+	height: 245px;
+	margin-left: 400px;
+	position: relative;
+	top: -24px;
 }
 
 .list-services {padding:0}
@@ -549,25 +557,40 @@ img#pg_large{
 	float: left;
 	position: relative;
 	width: 500px;
-	background: #CCC;
+	/*background: #CCC;*/
 	padding: 20px;
 	height: 230px;
 	overflow-y: scroll;
 	left: 18%;
+	font-family: 'segoeui';
 }
 
 .wishWrapperOdd{
-	border: 1px solid #333;
+	border: 1px solid #f0f0f0;
 	padding: 5px;
 	text-align: left;
-	webkit-align: left;
+	/*background: #d1fcff;*/
+	background-image: url('chat_bg_odd.png');
+	background-repeat: repeat;
+	-webkit-align: left;
+	-moz-border-radius: 5px;
+  	-webkit-border-radius: 5px;
+  	border-radius: 5px;
 }
 
 .wishWrapperEven{
-	border: 1px solid #333;
+	border: 1px solid #f0f0f0;
 	padding: 5px;
 	text-align: right;
-}.wishHeader{
+	/*background: #eeeeee;*/
+	background-image: url('chat_bg_even.png');
+	background-repeat: repeat;
+	-moz-border-radius: 5px;
+  	-webkit-border-radius: 5px;
+  	border-radius: 5px;
+}
+
+.wishHeader{
 	position: relative;
 	left: 18%;
 	margin-bottom: 10px;
