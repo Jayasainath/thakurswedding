@@ -91,6 +91,15 @@ h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:upper
 /* Embed fonts here */
 
 @font-face{
+	src:url('amazone_bt.ttf');
+	font-family: 'amazonebt';
+}
+@font-face{
+	src:url('EchinosParkScript.ttf');
+	font-family: 'EchinosParkScript';
+}
+
+@font-face{
 	src:url('segoeui.ttf');
 	font-family: 'segoeui';
 }
@@ -99,6 +108,11 @@ h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:upper
 @font-face {
 	src: url('Capture_it.ttf');
 	font-family: 'Captureitregular';
+	/*src: local('Capture_it'), local('Capture_it'), url('Capture_it.ttf') format('truetype');*/
+}
+@font-face {
+	src: url('DancingScript.ttf');
+	font-family: 'DancingScript';
 	/*src: local('Capture_it'), local('Capture_it'), url('Capture_it.ttf') format('truetype');*/
 }
 
@@ -110,7 +124,7 @@ h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:upper
 
 /* this is the default menu styling
  Apply the same style for the rails link */
-.menu li a {font-family: "Captureitbold", "Trebuchet MS", Arial, Helvetica, sans-serif;display:block;width:188px;font-size:21px;line-height:1.238em;padding:21px 0 24px 0;color:#262626;text-align:center;text-transform:uppercase;background:url(menu-a-tail.gif) right -71px no-repeat;letter-spacing:-1px}
+.menu li a {font-family: "DancingScript", "Trebuchet MS", Arial, Helvetica, sans-serif;display:block;width:188px;font-size:21px;line-height:1.238em;padding:21px 0 24px 0;color:#262626;text-align:center;text-transform:uppercase;background:url(menu-a-tail.gif) right -71px no-repeat;letter-spacing:-1px}
 .menu li a:hover,
 .menu li a.active {color:#fff;background-position:left top;background-repeat:repeat-x;background-color:#000}
 
