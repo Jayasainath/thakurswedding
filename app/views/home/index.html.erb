@@ -8,13 +8,24 @@
         <%= stylesheet_link_tag "grid" %>
     </head>
     <body id="page1">
-        <div id="fb-root"></div>
-            <script>
+        <!-- <div id="fb-root"></div> -->
+            <!-- <script>
                 (function(d, s, id){
                   var js, fjs = d.getElementsByTagName(s)[0];
                   if (d.getElementById(id)) return;
                   js = d.createElement(s); js.id = id;
                   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script> -->
+            
+            <div id="fb-root"></div>
+            <script>
+                (function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=443740639003633";
                   fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));
             </script>
@@ -145,7 +156,7 @@
                 	<div class="container_12">
                     	<div class="wrapper">
                         	
-                            <p class="countDownHeader">Countdown</p>
+                            <p class="countDownHeader">CountDown</p>
                             <article id="countdown-container" class="grid_4">
                                 
                             </article>
@@ -174,11 +185,7 @@
             <div class="main">
             	<div class="container_12">
                 	<div class="wrapper">
-                    	<!-- <div class="grid_4">
-                        	<div>Interior Design &copy; 2011 <a class="link color-3" href="#">Privacy Policy</a></div>
-                            <div><a rel="nofollow" target="_blank" href="http://www.templatemonster.com/">Website Template</a> by TemplateMonster.com | <a rel="nofollow" target="_blank" href="http://www.html5xcss3.com/">html5xcss3.com</a></div> -->
-                            <!-- {%FOOTER_LINK}
-                        </div> -->
+                    	
                         <div class="phoneNumberClass">
                             <span class="phoneCodeSpan">+91</span>
                             <span class="phoneNumberSpan"> 99493 90335</span>
@@ -186,7 +193,8 @@
                         <div class="fbItemClass">
                         	<ul class="list-services">
                             	<li>
-                                    <div class="fb-like" data-href="http://arcane-thicket-8918.herokuapp.com/" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="trebuchet ms"></div>
+                                    <div class="fb-like" data-href="http://www.amarwedsnupur.com" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="segoe ui"></div>
+                                    <!-- <div class="fb-like" data-href="http://arcane-thicket-8918.herokuapp.com/" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="trebuchet ms"></div> -->
                                 </li>
                             </ul>
                         </div>
