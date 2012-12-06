@@ -1,3 +1,12 @@
 .gallery_footer{
 	margin-top: 150px;
+}.gallery_phoneNumberClass{
+	height: 35px;
+}
+footer {
+	width:100%;
+	padding:40px 0 33px;
+	background:url(footer-tail.gif) center top repeat-x #fff;
+}.gallery_footer_wrapper{
+	margin-top: 150px;
 }
