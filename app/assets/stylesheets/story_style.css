@@ -1,6 +1,9 @@
 body{
-	background: #FFF;
+	background: #e0d7c8;
+	/*background:url(heart.png);*/
+	/*background-repeat: no-repeat;*/
 	color: #333;
+
 	font-family: 'segoeui';
 }
 
@@ -17,8 +20,71 @@ p{
 }.wish{
 	font-size: 32px;
 }.firstRow{
-	font-size: 24px;
+	text-shadow: 1px 1px #222;
+	font-size: 32px;
 }.secondRow{
 	font-size: 24px;
+}.thirdRow{
+	font-size: 24px;
+}.fourthRow{
+	font-size: 24px;
+}.fifthRow{
+	font-size: 24px;
+}.sixthRow{
+	font-size: 24px;
+}.seventhRow{
+	font-size: 24px;
+}.eighthRow{
+	font-size: 24px;
+}.heartImgDiv{
+	float: left;
+	position: relative;
 }
+
+
+
+
+
+
+
+<p class="">
+				Welcome to our wedding website! This website chronicles all those special moments that are yet to unfold, for Nupur and I, on the way to the altar, as we are preparing to say 'I do '.
+				<div class="heartImgDiv">
+					<img src="/assets/heart.png" alt=""/>
+				</div>
+			</p>
+			
+
+			<p class="">
+				We are happy to share all the special moments as they happen in the coming days. We invite you to share in the special moments that will transpire before we tie the knot.
+			</p>
+
+			<p class="">
+				We are visibly very excited, you can see that in the pictures! We want to keep you updated as the countdown has begun for Us before we become Man and Wife.
+
+				We would appreciate your gracious presence at our wedding. 
+			
+			<p class="">
+				<strong> And then I heard the wedding bells. </strong>
+				This is my side of the story! I have been waiting for a girl who will be there for me, in both good as well as bad times.We met at my sister's place and I knew right away Nupur was the girl I've been waiting for. Yes, I did hear wedding bells and knew we were meant for each other. I am happy to have Nupur as my life partner to share the rest of my life.
+			</p>
+			 
+			<p class="">
+				<strong>Finally here comes my Prince Charming: </strong>
+				Every girl grows up with the notion that someday her Prince Charming will come riding on a horse and sweep her off her feet. Then both of them will ride into the Sunset and live happily ever after. 
+				The first chapter to my Fairy Tale took off the moment I saw my soulmate and knew he is THE ONE! My wait for that someone special is finally over. 
+			 </p>
+			 
+			 
+			<p class="">
+				My Prince will actually come on a real horse to seek my hand in marriage. As I wait for my dream to unfold,  I  will cherish every moment on my way to the altar. The anxious moments, the long phone conversations, the shopping, planning for my life ahead!! My life is changing for the better and I can't wait for my 'D' Day to arrive.
+			</p>
+
+			<p class="">
+				<strong>Match made in heaven:</strong> Elders from both sides of the family met and everything fell into place. We believe we are meant for each other.
+			</p>
+			
+			<p class="">
+				Leave a blessing for us! Your heartfelt wishes would mean a lot to both of us.
+			</p>
 

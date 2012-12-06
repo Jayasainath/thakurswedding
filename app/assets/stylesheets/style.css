@@ -18,7 +18,7 @@ body {font-family:Arial, Helvetica, sans-serif;font-size:100%; color:#262626;min
 a {color:#ff9601; outline:none}
 a:hover {text-decoration:none}
 .col-1, .col-2 {float:left}
-.wrapper {width:100%; overflow:hidden; position:relative;}
+.wrapper {width:100%; overflow:hidden; position:relative; font-family: 'segoeui'}
 .contact_us_wrapper{
 	width: 200px;
 	height: 100px;
@@ -102,30 +102,12 @@ h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:upper
 	font-family: 'amazonebt';
 }
 @font-face{
-	src:url('EchinosParkScript.ttf');
-	font-family: 'EchinosParkScript';
-}
-
-@font-face{
 	src:url('segoeui.ttf');
 	font-family: 'segoeui';
-}
-
-
-@font-face {
-	src: url('Capture_it.ttf');
-	font-family: 'Captureitregular';
-	/*src: local('Capture_it'), local('Capture_it'), url('Capture_it.ttf') format('truetype');*/
 }
 @font-face {
 	src: url('DancingScript.ttf');
 	font-family: 'DancingScript';
-	/*src: local('Capture_it'), local('Capture_it'), url('Capture_it.ttf') format('truetype');*/
-}
-
-@font-face {
-	src: url('Capture_it_2.ttf');
-	font-family: 'Captureitbold';
 	/*src: local('Capture_it'), local('Capture_it'), url('Capture_it.ttf') format('truetype');*/
 }
 
@@ -568,7 +550,7 @@ img#pg_large{
 }
 
 .whatsNewDiv{
-	width: 300px;
+	width: 350px;
 	height: 200px;
 	float: left;
 }
