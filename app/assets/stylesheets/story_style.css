@@ -11,17 +11,14 @@ body{
 
 p{
 	margin: 20px;
-}
-
-.wish{
+}.story_wrapper{
+	width: 200px;
+	height: 100px;	
+}.wish{
 	font-size: 32px;
-}
-
-.firstRow{
+}.firstRow{
 	font-size: 24px;
-}
-
-.secondRow{
+}.secondRow{
 	font-size: 24px;
 }
 

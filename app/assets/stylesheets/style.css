@@ -18,7 +18,14 @@ body {font-family:Arial, Helvetica, sans-serif;font-size:100%; color:#262626;min
 a {color:#ff9601; outline:none}
 a:hover {text-decoration:none}
 .col-1, .col-2 {float:left}
-.wrapper {width:100%; overflow:hidden; position:relative}
+.wrapper {width:100%; overflow:hidden; position:relative;}
+.contact_us_wrapper{
+	width: 200px;
+	height: 100px;
+}.invitation_wrapper{
+	width: 200px;
+	height: 100px;
+}
 .extra-wrap {overflow:hidden}
 p {margin-bottom:18px}
 .p0 {margin-bottom:0px}
