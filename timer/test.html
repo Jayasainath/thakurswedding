@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Test</title>
+		
+		<script type="text/javascript">
+
+			function test(){
+				var h = {'one':1, 'two':2, 'three':3}; // or just {}
+				
+				// show the values stored
+				// for (var k in h) {
+				    // use hasOwnProperty to filter out keys from the Object.prototype
+				    if (h.hasOwnProperty(k)) {
+				        console.log("key is: " + k + ", value is: " + h[k]);
+				    }
+				// }
+			}
+
+		</script>	
+
+
+	</head>
+	<body>
+		<input type="button" value="Run" onclick="test()">
+	</body>
+</html>
